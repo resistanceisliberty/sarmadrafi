@@ -125,7 +125,7 @@ a:focus, a:hover {
     position: fixed;
     top: 0px;
     width: 100%;
-
+    z-index: 1000;
 }
 
 .masthead {
