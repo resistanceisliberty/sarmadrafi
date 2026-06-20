@@ -164,13 +164,13 @@ a:focus, a:hover {
   }
 }
 
+/* inline on purpose: no Bootstrap, so width/height are ignored — renders as the thin vertical pill, not a circle */
 .btn-circle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 26px;
   width: 55px;
   height: 55px;
   margin-top: 15px;
+  line-height: 45px;
   transition: background 0.3s ease-in-out;
   color: white;
   border: 2px solid white;
