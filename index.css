@@ -42,8 +42,6 @@ p {
 }
 
 a {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #42DCA3;
 }
@@ -137,9 +135,6 @@ a:focus, a:hover {
   color: white;
   background: url("https://i.ibb.co/cxyQsRj/IMAG0081.jpg") no-repeat bottom center scroll;
   background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -170,13 +165,12 @@ a:focus, a:hover {
 }
 
 .btn-circle {
-  font-size: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 55px;
   height: 55px;
   margin-top: 15px;
-  line-height: 45px;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
   color: white;
   border: 2px solid white;
@@ -210,16 +204,11 @@ a:focus, a:hover {
   bottom: -8px;
   left: -8px;
   background: url("https://i.ibb.co/Czk4ZN6/mountain.jpg") no-repeat 50% 25%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   z-index: 0;
-  -webkit-transition: -webkit-filter 0.45s ease;
-  transition: -webkit-filter 0.45s ease, filter 0.45s ease;
+  transition: filter 0.45s ease;
 }
 .download-section:hover::before {
-  -webkit-filter: blur(3px) brightness(0.62);
   filter: blur(3px) brightness(0.62);
 }
 .download-section > .container {
@@ -237,21 +226,12 @@ a:focus, a:hover {
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   border-radius: 0;
 }
 
-::-moz-selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-  text-shadow: none;
-}
-
 ::selection {
-  background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
   text-shadow: none;
 }

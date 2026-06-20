@@ -4,13 +4,8 @@
     <script>document.documentElement.classList.add('js');</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>Sarmad's Page</title>
     <link rel="stylesheet" href="index.css?v=10">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script>
   </head>
 
   <body id="page-top">
@@ -25,82 +20,63 @@
 
     <header class="masthead">
       <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Sarmad Rafi.</h1>
-              <h1 class="intro-text">Welcome to my website!</h1>
-              <a href="#works" class="btn btn-circle js-scroll-trigger" aria-label="Scroll to works">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        <h1 class="brand-heading">Sarmad Rafi.</h1>
+        <h1 class="intro-text">Welcome to my website!</h1>
+        <a href="#works" class="btn btn-circle" aria-label="Scroll to works">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
       </div>
     </header>
 
     <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Things you should know about me</h2>
-            <p>My favourite quote is "Sic Semper Tyrannis".</p>
-          </div>
-        </div>
-      </div>
+      <h2>Things you should know about me</h2>
+      <p>My favourite quote is "Sic Semper Tyrannis".</p>
     </section>
 
     <section id="sentiments" class="download-section content-section text-center">
       <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Two Jack Lake, Banff National Park, Alberta.</h2>
-        </div>
+        <h2>Two Jack Lake, Banff National Park, Alberta.</h2>
       </div>
     </section>
 
     <section id="works" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>My Works.</h2>
-          </div>
-        </div>
+      <h2>My Works.</h2>
 
-        <div class="works">
-          <div class="works-controls">
-            <div class="dropdown">
-              <button class="primary-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                <span>Writing</span><span class="caret">&#9662;</span>
-              </button>
-              <div class="dropdown-menu" role="menu">
-                <button class="dropdown-item active" role="menuitem" data-pdf="pdfs/corroborate-whitepaper.pdf">Corroborate &mdash; calibrated, independence-aware event corroboration</button>
-                <button class="dropdown-item" role="menuitem" data-pdf="pdfs/glp1-obesity-canada.pdf">GLP-1 Receptor Agonists and Their Role in Tackling Obesity in Canada</button>
-                <button class="dropdown-item" role="menuitem" data-pdf="pdfs/rural-saskatchewan-healthcare.pdf">Transportation &amp; Access to Health Care in Older Adults Living in Rural Saskatchewan</button>
-                <button class="dropdown-item" role="menuitem" data-pdf="pdfs/war-on-terror.pdf">A Vicious Cycle: The Consequences of the American &ldquo;War on Terror&rdquo;</button>
-                <button class="dropdown-item" role="menuitem" data-pdf="pdfs/blair-mountain.pdf">Blood and Coal Dust: The Battle of Blair Mountain</button>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="primary-btn" type="button" aria-haspopup="true" aria-expanded="false" data-gh-user="resistanceisliberty">
-                <span>GitHub</span><span class="caret">&#9662;</span>
-              </button>
-              <div class="dropdown-menu gh-menu" role="menu">
-                <p class="gh-loading">Loading repositories&hellip;</p>
-              </div>
+      <div class="works">
+        <div class="works-controls">
+          <div class="dropdown">
+            <button class="primary-btn" type="button" aria-haspopup="true" aria-expanded="false">
+              <span>Writing</span><span class="caret">&#9662;</span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <button class="dropdown-item active" role="menuitem" data-pdf="pdfs/corroborate-whitepaper.pdf">Corroborate &mdash; calibrated, independence-aware event corroboration</button>
+              <button class="dropdown-item" role="menuitem" data-pdf="pdfs/glp1-obesity-canada.pdf">GLP-1 Receptor Agonists and Their Role in Tackling Obesity in Canada</button>
+              <button class="dropdown-item" role="menuitem" data-pdf="pdfs/rural-saskatchewan-healthcare.pdf">Transportation &amp; Access to Health Care in Older Adults Living in Rural Saskatchewan</button>
+              <button class="dropdown-item" role="menuitem" data-pdf="pdfs/war-on-terror.pdf">A Vicious Cycle: The Consequences of the American &ldquo;War on Terror&rdquo;</button>
+              <button class="dropdown-item" role="menuitem" data-pdf="pdfs/blair-mountain.pdf">Blood and Coal Dust: The Battle of Blair Mountain</button>
             </div>
           </div>
 
-          <p class="work-title" id="work-title">Corroborate &mdash; calibrated, independence-aware event corroboration</p>
-          <iframe id="pdf-viewer" title="Document viewer" src="pdfjs/web/viewer.html?file=../../pdfs/corroborate-whitepaper.pdf"></iframe>
+          <div class="dropdown">
+            <button class="primary-btn" type="button" aria-haspopup="true" aria-expanded="false" data-gh-user="resistanceisliberty">
+              <span>GitHub</span><span class="caret">&#9662;</span>
+            </button>
+            <div class="dropdown-menu gh-menu" role="menu">
+              <p class="gh-loading">Loading repositories&hellip;</p>
+            </div>
+          </div>
         </div>
+
+        <p class="work-title" id="work-title">Corroborate &mdash; calibrated, independence-aware event corroboration</p>
+        <iframe id="pdf-viewer" title="Document viewer" src="pdfjs/web/viewer.html?file=../../pdfs/corroborate-whitepaper.pdf"></iframe>
       </div>
     </section>
 
     <footer id="site-footer">
       <a class="footer-gh" href="https://github.com/resistanceisliberty" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
         <svg viewBox="0 0 16 16" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-      <span>github.com/resistanceisliberty</span>
+        <span>github.com/resistanceisliberty</span>
+      </a>
     </footer>
 
     <script>
